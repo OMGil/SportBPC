@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Oswald:wght@200&family=Raleway:ital,wght@1,900&display=swap');
+
+/* Импорт стилей текста - всё */
+
+*,*::after,*::before{box-sizing: border-box;line-height: 1;padding: 0;margin: 0;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
+ul,li,ol{list-style: none;}
+img{vertical-align: top;}
+a{color: black; text-decoration: none;}
+html,body{line-height: 1; box-sizing: border-box; height: 100vh;}
+
+/* Сброс стилей - всё. */
+
+.wrapper{
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+[class*="__container"]{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+}
+
+.header__top {
+	background: #e5e5e540;
+}
+
+.belpc-name {
+	padding: 0 20px 0 20px;
+	flex: 1 1 auto;
+	}
+
+.belpc-name__logo {
+	max-height: 90px;
+}
+
+.belpc-name__title {
+	font-size: 30px;
+	max-width: 425px;
+	text-transform: uppercase;
+	font-family: 'Manrope', sans-serif;
+}
+
+.belpc-name__subtitle {
+	font-size: 16px;
+	color: #636363;
+	max-width: 410px;
+	padding: 10px 0 0 0;
+	font-family: 'Source Sans Pro', sans-serif; 
+	
+}
+
+.contact-us {
+	display: flex;
+	align-items: center;
+}
+
+.contact-us__phone-image {
+	max-height: 20px;
+}
+
+.contact-us__phone{
+	display: flex;
+	align-items: center;
+}
+
+.contact-us__contact{
+	display: flex;
+	align-items: center;
+}
+
+.contact-us__number {
+	width: 127px;
+	margin: 0 10px;
+}
+
+.contact-us__vk {
+	max-height: 20px;
+}
+
+/* .contact-us__contacts {
+} */
+
+.contact-us-link{
+	background: rgb(255, 203, 108);
+	border-radius: 3px;
+	padding: 5px;
+	margin: 0 0 0 10px;
+}
+
+/* 
+font-family: 'Manrope', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+.header__middle {
+	position: sticky;
+}
+
+.navigation-menu {
+	width: 100%;
+	min-height: 80px;
+	display: flex;
+	align-items: center;
+}
+
+.navigation-menu__list {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.navigation__element {
+	padding: 5px;
+}
+
+.navigation__link {
+	color: #636363;
+}
+
+.header__down {
+	background: rgb(0, 136, 111);
+	display: flex;
+	min-height: 120px;
+}
+
+.header__down__title {
+	display: flex;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	font-size: 50px;
+	align-items: center;
+	text-align: center;
+}
+
+@media(max-width: 1200px){
+	[class*="__container"]{
+		max-width: 970px;
+	}
+}
+
+@media(max-width: 991px){
+	[class*="__container"]{
+		max-width: 750px;
+	}
+
+	.contact-us{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.belpc-name__logo{
+		max-height: 60px;
+	}
+
+	.belpc-name__title{
+		font-size: 20px;
+	}
+
+	.header__down__title {
+		font-size: 30px;
+	}
+
+	.header__down{
+		min-height: 100px;
+	}
+
+	.contact-us__contact{
+		padding: 12px 0 0 0;
+	}
+}
+
+@media(max-width: 768px){
+	[class*="__container"]{
+		max-width: none;
+	}
+}
+
+@media(max-width: 453px){
+	[class*="__container"]{
+		flex-wrap: wrap;
+	}
+	
+	.belpc-name__logo{
+		display: none;
+	}
+
+	.contact-us{
+		padding: 10px 0 0 0;
+	}
+}
